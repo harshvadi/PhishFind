@@ -25,14 +25,14 @@
       </div>
 
       <div class="prediction-container" id="prediction">
-        {% if prediction %}
+        {% if prediction >= 2 %}
         <p>
           {{ url }} is
         </p>
         <h3 id="phishing">
           Phishing
         </h3>
-        {% else %}
+        {% elif prediction < 2 %}
         <p>
           {{ url }} is
         </p>

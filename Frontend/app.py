@@ -43,10 +43,9 @@ def submit():
     print(prediction)
 
     # majority voting
-    prediction = prediction / 2
+    # prediction = prediction / 2
 
     return render_template("urlPage.html", prediction=prediction, url=url)
 
 
-# app.run("localhost", "5000", debug=True)
-app.run()
+app.run(debug=True)
