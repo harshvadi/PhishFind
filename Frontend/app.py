@@ -48,4 +48,5 @@ def submit():
     return render_template("urlPage.html", prediction=prediction, url=url)
 
 
-app.run("localhost", "5000", debug=True)
+# app.run("localhost", "5000", debug=True)
+app.run()
