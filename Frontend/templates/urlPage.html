@@ -25,20 +25,24 @@
       </div>
 
       <div class="prediction-container" id="prediction">
-        {% if prediction >= 2 %}
+        {% if prediction == 1 %}
         <p>
           {{ url }} is
         </p>
         <h3 id="phishing">
           Phishing
         </h3>
-        {% elif prediction < 2 %}
+        {% elif prediction == 0 %}
         <p>
           {{ url }} is
         </p>
         <h3 id="legitimate">
           Legitimate
         </h3>
+        {% elif prediction == -1 %}
+        <p>
+          Enter a URL above
+        </p>
         {% endif %}
       </div>
     </div>
